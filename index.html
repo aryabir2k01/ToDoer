@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta tags for character set and viewport -->
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Title of the ToDoer app -->
   <title>ToDoer</title>
+  <!-- Linking the external stylesheet -->
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <!-- Main container for the ToDoer app -->
   <div class="wrapper">
+    <!-- Header section displaying the app title -->
     <header>ToDoer</header>
+    <!-- Input field for new tasks and Add button -->
     <div class="inputField">
       <input type="text" placeholder="Add Your New Todo List" id="todo_input"/>
       <button id="addBtn">Add</button>
     </div>
+    <!-- Unordered list for displaying the tasks -->
     <ul class="todoList"></ul>
+    <!-- Footer section displaying the number of pending tasks and Delete All button -->
     <div class="footer">
       <span>You've <span id="pendingTasks">0</span> Pending Tasks</span>
       <button id="deleteAllBtn">Delete All</button>
     </div>
   </div>
+  <!-- Linking the JavaScript file for app functionality -->
   <script src="script.js"></script>
 </body>
 </html>
